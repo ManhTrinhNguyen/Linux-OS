@@ -87,4 +87,10 @@
 
 # Linux File System
 ```
+  - Linux File Systen is hierarchie tree structure
+  - 1 Root folder
+    |_ /bin
+    |_ /etc
+    |_ /opt
+    |_ /var
 ```

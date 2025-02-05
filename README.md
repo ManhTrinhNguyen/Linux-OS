@@ -62,5 +62,9 @@
 ----Application (Distribution of Linux)----
   - There is Application on top of Kernel like Ubuntu, Debian, Linux Mint
   - Diffent Application layer but base on the same Linux Kernel (different color theme, GUI, color font ....)
-  - Android is base on Linux Kernel 
+  - Android is base on Linux Kernel
+
+----How to interact with Kernel ?----
+  - GUI or CLI
+  - Which mean can not be accesible or can not be used without the OS user layer
 ```

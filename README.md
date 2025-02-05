@@ -83,4 +83,8 @@
   - Type1 : Instead of install OS on the Host OS . Type1 install directly on the hardward
     - Type1 also call Bare Metal Hypervisor
     - So the Hypervisor control the hardware resources instead of talking to the host OS whether it can borrow resources for its virtual machine . So it sit ontop of hardware and control everything 
-```  
+```
+
+# Linux File System
+```
+```

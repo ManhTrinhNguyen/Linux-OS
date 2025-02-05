@@ -41,12 +41,10 @@
     - OS knows how to handle and translate interactions between apps and devices
 
   5. Security and Networking
-    - For Security : Managing User and Permission. Can have multiple user on 1 computer 
+    ----Security----
+    - Managing User and Permission. Can have multiple user on 1 computer . Each users have their own password so they can do their own stuff
+    - User also have permission : I may have an admin user to allow addminisate and have less privileges user who have less permission so they don't accident break something on OS
 
-
-
-
-
-
-
+    ----Networking----
+    - Assigning port and ip address 
 ```

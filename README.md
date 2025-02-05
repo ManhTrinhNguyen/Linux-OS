@@ -88,9 +88,48 @@
 # Linux File System
 ```
   - Linux File Systen is hierarchie tree structure
+  - 1 root folder and inside root folder I have couple more folder and inside couple more folder I have more Folder .... 
   - 1 Root folder
     |_ /bin
+    |_ /sbin
+    |_ /usr
+      |_ /local
     |_ /etc
     |_ /opt
     |_ /var
+    |_ /home
+
+  - Root user has it owns isolated folder seperate from all other users /root
+  ----/home----
+    - Where all Linux users spaces allocated except Root user . !!! Important to isolated users so I can have multiple Users on my OS that not gonna interfere with each other
+    - Each user has it owns space
+    - Each user has it owns configuration
+
+  - There also program that has to be system-wide : 
+
+  ----/bin----
+    - Stand for binary 
+    - /bin folder inside root directory contain the most basic command and binary files command I have available on my OS (cd, ls, cat, echo ....)
+
+  ----/sbin----
+    - System binary
+    - These command in /sbin is system relevant that these command need a super user permission to execute
+
+  ----/lib----
+    - Library Folder
+    - Hold the library for those command
+    - 1 Program can actually split into different location . Having executable file in /bin and having librarie in /lib
+
+  ----/usr----
+    - Stand for user
+    - This folder is User location before home Dir was added
+    - Inside /usr also have /bin, /lib, /sbin . The same concept as root folder
+    - History reason : Bcs of Limitation of Storage , it was split to root binary folder and the rest of them in user folder
+    - NOTE: Whenever I execute command in terminal it will execute from /usr/bin (from /usr folder)
+    - NOTE: /bin and /sbin has less command then /usr/bin and /usr/sbin
+
+  ----/local----
+    - Local folder also has /bin /lib/ /sbin
+    - 
 ```
+

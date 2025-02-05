@@ -48,3 +48,19 @@
     ----Networking----
     - Assigning port and ip address 
 ```
+
+**How is OS made up ?**
+```
+  ----Kernel----
+  - In the core OS have a Kernal
+  - This a part of OS that load first
+  - The heart of every OS responsible for managing all the hardward (CPU, RAM, Disk, I/O device)
+  - Kernel handle I/O devices using devices driver . Device driver are code or program which allow external devices to interact with computer
+  - Kernel is a layer interacting between Application and Hardware . When I start Application it the kernel start the process for that Application, load it into memory and allocate CPU
+  - Clean up Resources when App shut down
+
+----Application (Distribution of Linux)----
+  - There is Application on top of Kernel like Ubuntu, Debian, Linux Mint
+  - Diffent Application layer but base on the same Linux Kernel (different color theme, GUI, color font ....)
+  - Android is base on Linux Kernel 
+```

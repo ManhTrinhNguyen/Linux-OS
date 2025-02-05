@@ -68,3 +68,19 @@
   - GUI or CLI
   - Which mean can not be accesible or can not be used without the OS user layer
 ```
+
+# Virtualization and Virtual Machine
+```
+  ----What is Virtual Machine----
+  - With Virtualization is no need separate hardward to install Operating System
+  - I can install Window OS on Linux OS , MacOS on Linux OS or vice versa by using Hypervisor
+
+  ----Hypervisor----
+  - Hpyervisor is a technology that allow hosting multiple virtual machine on a physical computer on top of OS I have installed
+
+  ----Type1 and Type2 of Hypervisor----
+  - Type2 : Guest OS borrow hardward from Host OS
+  - Type1 : Instead of install OS on the Host OS . Type1 install directly on the hardward
+    - Type1 also call Bare Metal Hypervisor
+    - So the Hypervisor control the hardware resources instead of talking to the host OS whether it can borrow resources for its virtual machine . So it sit ontop of hardware and control everything 
+```  

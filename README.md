@@ -105,7 +105,7 @@
     - Each user has it owns space
     - Each user has it owns configuration
 
-  - There also program that has to be system-wide : 
+  ----There also program that has to be system-wide----
 
   ----/bin----
     - Stand for binary 
@@ -128,8 +128,37 @@
     - NOTE: Whenever I execute command in terminal it will execute from /usr/bin (from /usr folder)
     - NOTE: /bin and /sbin has less command then /usr/bin and /usr/sbin
 
-  ----/local----
-    - Local folder also has /bin /lib/ /sbin
-    - 
+  ----/usr/local----
+    - Inside /usr folder I have local folder which also has /bin /lib/ /sbin
+    - This is a location where Me as a Linux User are installing myself will actually go
+    - Third party applications like VScode, Chrome .... will located here
+    - System-wide installation
+
+  ----/opt----
+    - Another location where third party or external application will be installed
+    - Differnt between /opt and /usr/local is There are some Application do not slpit their code or their file in different directory . This program will install everything in 1 Dir
+
+  ----/boot----
+    - For booting the system
+    - Should not touch that
+
+  ----/dev----
+    - stand for devices
+    - Where devices connect to computer will be store (keyboard, mouse etc ....)
+    - All files that system need to interact with the device is in /dev
+
+  ----/var----
+    - When OS start it will actually logs some data . These logs are in /var
+    - /var/cache contain cached data from application programs
+    - /var/log contain logs file
+
+  ----/tmp----
+    - stand fo tempuraly
+    - Store some temp files that process in the background then will be deleted
+
+  - Those folder above is Read-only folder
+
+  ----/etc----
+    - Where the system configuration store (network interface configuration, Linux user and password data etc ..., )
 ```
 

@@ -270,7 +270,8 @@
 
   ----Which to choose ?----
     - Use useradd groupadd command in script
-    - User adduser addgroup command when execute manually 
+    - User adduser addgroup command when execute manually
+    - The same for other command 
 ```
 
 

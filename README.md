@@ -171,3 +171,41 @@
   - And hidden applications will automatically create them to store configuration some script they need to execute
   - In addtion to Application themselve generating these folder and files I also have OS itself generating some of these folder and files specificlly for my user
 ```
+
+# Package Manager 
+
+**What is software package?**
+```
+  - Software package is a compress archive, contain all required files by a specific software to run
+  - Apps usally have dependencies they depend on other software to run 
+```
+
+**Package Manager**
+```
+  - Software package hard to install bcs in Linux 1 Application split among directories
+  - That's why we need Package Manager to install software
+  - Package Manager Download, Install or Updates existing software from a repository
+  - The Package Managet will resolve Dependencies 
+```
+
+# Linux Accounts & Groups 
+```
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

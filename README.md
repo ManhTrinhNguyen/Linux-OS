@@ -264,7 +264,10 @@
     - useradd -G devops nicole
       - useradd : low level command
       - -G : create user with multiple secondary group
-      - -d : custome home directory 
+      - -d : custome home directory
+
+    ----Remove user from a Group----
+    - gpasswd -d <username> <groupname>
 ```
 
 **Different User and Groups Command**

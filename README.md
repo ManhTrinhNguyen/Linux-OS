@@ -240,6 +240,37 @@
     - su - <username> = Login as a username 
 
     !!! Whenever I create user by default it also create a group with the same name as a user and set that as a primary group id of the user
+
+
+  ----How to add Groups ?----
+    - groupadd <groupname> = create group
+
+    !!! By default system assign the next available GID from the range of group IDs specificed in the login.defs file  
+```
+
+**Different User and Groups Command**
+```
+  adduser ---- useradd
+  addgroup ---- groupadd
+  deluser ---- userdel
+  delgroup ---- groupdel
+
+  ----What is the different ?----
+
+  ---adduser and addgroup :---
+    - More interactive
+    - User friendly
+    - Choose conformat UID and GUID values for you
+    - Create a home directory with skeletal config automatically
+    - Or ask for password in interactive mode
+
+  ---useradd and groupadd :---
+    - I need to provide info myself as a parameter
+    - Low level command
+
+  ----Which to choose ?----
+    - Use useradd groupadd command in script
+    - User adduser addgroup command when execute manually 
 ```
 
 

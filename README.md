@@ -1,5 +1,3 @@
-- [# Linux File System](#LinuxFileSystem)
-
 # Linux-OS
 
 **What is Operating System?**

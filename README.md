@@ -1,3 +1,5 @@
+
+![DevOps](https://github.com/user-attachments/assets/47da8908-a9a3-4963-aa27-3868946c7ffb)
 # Linux-OS
 
 **What is Operating System?**
@@ -296,6 +298,26 @@
     - The same for other command 
 ```
 
+# File Ownership & Permission
+
+**Ownership**
+```
+  - Everything in Linux is a file
+  - Ownership is mean who own the file
+  - Each file have 2 different owner : User and Group
+    - User : is usally who created the file
+    - Group : Primary group of that user
+  - Owner of the file is someone who has any permission or any access permission to that file 
+
+  - chown <username>:<groupname> <filename> = change ownership of the file
+  - chgroup <groupname> <filename> = change only group of the file
+```
+
+**Permission**
+```
+
+  
+```
 
 
 

@@ -1,5 +1,3 @@
-
-![DevOps](https://github.com/user-attachments/assets/47da8908-a9a3-4963-aa27-3868946c7ffb)
 # Linux-OS
 
 **What is Operating System?**
@@ -315,7 +313,7 @@
 
 **Permission**
 ```
-
+  <img width="720" alt="Screenshot 2025-02-06 at 13 42 10" src="https://github.com/user-attachments/assets/8b53509f-53c0-4bc5-b273-32684ab49e2b" />
   
 ```
 

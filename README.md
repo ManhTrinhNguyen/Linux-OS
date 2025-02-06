@@ -312,10 +312,23 @@
 ```
 
 **Permission**
-  <img width="720" alt="Screenshot 2025-02-06 at 13 42 10" src="https://github.com/user-attachments/assets/8b53509f-53c0-4bc5-b273-32684ab49e2b" />
+
+<img width="720" alt="Screenshot 2025-02-06 at 13 42 10" src="https://github.com/user-attachments/assets/8b53509f-53c0-4bc5-b273-32684ab49e2b" />
 
 ```
-  
+  ----First column (File Type)----
+  -d stand for directory
+  - stand for regular file
+  l stand for symbol link
+  c stand for character device file
+
+  Then Permission will divide into next 3 parts (3 columns for 1 part)
+ 
+  - Part 1 will belong to Owner
+  - Part 2 will belong to Groups
+  - Part 3 will belong to Others
+
+  - rwx stand for Read Write Execute | - stand for no permission 
 ```
 
 

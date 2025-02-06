@@ -235,7 +235,11 @@
     - /bin/bash : User shell
 
   ----How to add User ?----
+    - adduser <username> = Create new user
+    - passwd <username> = Change password
+    - su - <username> = Login as a username 
 
+    !!! Whenever I create user by default it also create a group with the same name as a user and set that as a primary group id of the user
 ```
 
 

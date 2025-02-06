@@ -312,8 +312,9 @@
 ```
 
 **Permission**
-```
   <img width="720" alt="Screenshot 2025-02-06 at 13 42 10" src="https://github.com/user-attachments/assets/8b53509f-53c0-4bc5-b273-32684ab49e2b" />
+
+```
   
 ```
 

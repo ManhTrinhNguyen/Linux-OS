@@ -212,6 +212,31 @@
 ```
 
 **Groups and Permission**
+```
+  ----How to manage permission on Linux?----
+
+  - I can manage on 2 different level
+    1. User Permission : Give User permission directly 
+    2. Group Permission :
+      - Group user into group
+      - Give Permission to the group
+```
+
+**User Managment in Practice**
+```
+  ----Access Control Files----
+  - /etc/passwd : Store user account infomation 
+  - Example : docker:x:1000:999:,,,:/home/docker:/bin/bash  This line this represent Docker user
+    - docker : Name of user
+    - x : is encrypted password is stored /etc/shadow file
+    - 1000 : is unique id of the user . Root user alway have id of 0
+    - 999 : is primary Group id for a user . So group also have ID and each user will have primary group which that user part of
+    - /home/docker : User home Dir
+    - /bin/bash : User shell
+
+  ----How to add User ?----
+
+```
 
 
 

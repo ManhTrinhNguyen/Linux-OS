@@ -245,7 +245,26 @@
   ----How to add Groups ?----
     - groupadd <groupname> = create group
 
-    !!! By default system assign the next available GID from the range of group IDs specificed in the login.defs file  
+    !!! By default system assign the next available GID from the range of group IDs specificed in the login.defs file
+
+  ----How to modify user account ?----
+    - usermod [options] <username> = modify user account
+    - usermod -g devops tim
+      - -g : Make devops a primary group of user tim
+      - -G : To add user to multiple secondary group (will overwrite the whole Secondary group list)
+      - -aG : Will append a new group to a exsting group
+      - devops : is a group
+      - tim : username that i want to modify
+
+    ----To Display group----
+    - groups = To display groups that user
+
+    ----Create user also add user to secondary group----
+    - useradd [OPTIONS] <username> = create new user
+    - useradd -G devops nicole
+      - useradd : low level command
+      - -G : create user with multiple secondary group
+      - -d : custome home directory 
 ```
 
 **Different User and Groups Command**

@@ -341,6 +341,10 @@
   chmod g+x <filename> = add execute permission on group owner
 
   ----Second way----
+  u stand for user
+  g stand for group
+  o stand for other
+
   chmod u=rwx <filename> = add read write execute permission in user owner 
 ```
 

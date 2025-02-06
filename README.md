@@ -189,7 +189,21 @@
 ```
 
 # Linux Accounts & Groups 
+
+**Linux Accounts**
 ```
+  - 3 Type of Linux Users
+    1. Root User : Unrestricted Permission to the whole system
+    2. Regular User : This is a user we create to login to the system
+    3. Service User : is relevant on Linux Distribution . Bcs Linux wildly use for server and server run different services like DB, Web App ...etc . And each services will have it owns user . Bcs It make sure it isolated in term of permission from each other and ensure better security . And this is a best practice in server managment in Devops . No service should run on root user
+
+  - On 1 machine I may have multiple of those users .
+  - I may have multiple Reg User and multiple Service User
+```
+
+**Multiple Users on the Server**
+```
+  - For Linux 
 ```
 
 

@@ -406,7 +406,9 @@
   - We can add the location to the PATH only for our user :
     - In .bashrc : add PATH=$PATH:<location of the excutable file>
       - $PATH: get all Refernces PATH of all user from the system
-      - :<location> : append to location I want to execute    
+      - :<location> : append to location I want to execute
+
+    - Purpose of PATH is instead of me having to provide the full the absolute location . I just need to provide the specific location in wherever in the file 
 ```
 
 

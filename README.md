@@ -331,6 +331,15 @@
   - rwx stand for Read Write Execute | - stand for no permission 
 ```
 
+**Modifying Permission**
+
+<img width="1072" alt="Screenshot 2025-02-06 at 13 56 12" src="https://github.com/user-attachments/assets/f8b03efb-c12a-485c-b93e-4f45b6d721f7" />
+
+```
+  chmod -x <filename> = take away execute permission of all owners
+  chmod g+x <filename> = add execute permission on group owner 
+```
+
 
 
 

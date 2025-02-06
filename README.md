@@ -203,8 +203,16 @@
 
 **Multiple Users on the Server**
 ```
-  - For Linux 
+  - For Linux having multi-server is important for Server
+  - Usually server manage by team or administator so multiple people need access to the same server
+
+  ----Why have a User for each team member is important? ?----
+  - Someone maybe a senior have more privileges than junior 
+  - Bcs we need to know who did what at specific time 
 ```
+
+**Groups and Permission**
+
 
 
 

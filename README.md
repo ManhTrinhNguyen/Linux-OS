@@ -410,11 +410,36 @@
 
     - Purpose of PATH is instead of me having to provide the full the absolute location . I just need to provide the specific location in wherever in the file 
 ```
+**Networking**
 
+**LAN**
+```
+  - LAN : Local Area Network
 
+  - LAN is a network of a bunch of devices connected together in 1 physical location
 
+  - This could be as small as house LAN, LAN of huge office building or school campus with alot of Devices
 
+  - Each devices is identify by a unique IP address
 
+  - Devices communicate to each other using IP address
+
+  - For example if my computer want to send something to a Printer to print . It must know Printer's IP address and send the information there  
+```
+
+**IP Address**
+
+<img width="400" alt="Screenshot 2025-02-26 at 18 32 58" src="https://github.com/user-attachments/assets/c53a0679-be5c-4edf-aadc-f18bb4641f8b" />
+
+```
+  - IP address is a 32 bit values .
+
+  - IP address or IPv4 address is composed of 32 bits
+
+  - Every 8 bits are group into an Octet and each Octer can be represented as a decimal number that human can read
+
+  - Octet with all Eight Zero is 0 (in decimal) . Octet with all Eight One is 255 (in decimal) -> That mean IP Address can range from 0.0.0.0 to 255.255.255.255
+```
 
 
 

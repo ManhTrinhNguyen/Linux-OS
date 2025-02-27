@@ -441,7 +441,57 @@
   - Octet with all Eight Zero is 0 (in decimal) . Octet with all Eight One is 255 (in decimal) -> That mean IP Address can range from 0.0.0.0 to 255.255.255.255
 ```
 
+**How do devices know each othet IP address | How can they send thing to each other ?**
 
+**Switch**
+```
+  - That is the task of special device on a LAN called Switch
+
+  - Switch sit within a LAN and know all IP Address of all devices and therefor help them communicate with each other
+
+  - So all the devices can talk to each other in a LAN using Swtich . But how do they talk to a outside LAN ? like a Server 
+```
+
+**Router**
+
+<img width="500" alt="Screenshot 2025-02-26 at 18 46 13" src="https://github.com/user-attachments/assets/abdc0c73-9fd0-4c71-a16f-76fc94e33d25" />
+
+```
+  - For connecting to outside devices there is a special device called Router
+
+  - Router is a network device that sit between LAN and WAN (Wide Area Network)
+
+  - So Router connect devices on local area network and wide area network
+
+  - Which mean the Router connect me to the Internet
+
+  - For example I want to Open FB apps in my Phone . I send the request through a Router then Router will send the request to Facebook server over the Internent and the IP address of a Router called Gateway
+
+  - Network Gateway = Router
+```
+
+**Subnet**
+```
+  - Now other question is when a devices in LAN send a request to other devices . How does it know that device in the LAN or WAN ?
+
+  - So they will decide on the IP Address of a Target Device
+
+  - Every devices have a unique IP address. These IP address are not random
+
+  - They are all belong to the same range of IP addresses to identifies devices in the same network and that IP address range called Subnet or Sub-network
+```
+
+**Subnet Example**
+
+<img width="400" alt="Screenshot 2025-02-26 at 18 53 09" src="https://github.com/user-attachments/assets/c30d3ec9-7d57-4be3-8b8f-77d7f1b8c311" />
+
+```
+  - First part is a IP address , and that is a starting point of that IP Address range (First IP address in the Range)
+
+  - Second part is called Subnet Mask (Set the IP Range) and it define that whatever IP address of devices start with 192.168.0.x it will belong to a LAN
+
+  - If I change the Subnet Mask value from 255.255.255.0 to 255.255.0.0 and this will define an IP Address Range start with 192.168.0.x to 192.168.x.x . So all the IP address start with 192.168.x.x with belong the same range 
+```
 
 
 

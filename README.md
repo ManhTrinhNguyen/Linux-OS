@@ -485,13 +485,54 @@
 
 <img width="400" alt="Screenshot 2025-02-26 at 18 53 09" src="https://github.com/user-attachments/assets/c30d3ec9-7d57-4be3-8b8f-77d7f1b8c311" />
 
-```
-  - First part is a IP address , and that is a starting point of that IP Address range (First IP address in the Range)
 
-  - Second part is called Subnet Mask (Set the IP Range) and it define that whatever IP address of devices start with 192.168.0.x it will belong to a LAN
+First part is a IP address , and that is a starting point of that IP Address range (First IP address in the Range)
 
-  - If I change the Subnet Mask value from 255.255.255.0 to 255.255.0.0 and this will define an IP Address Range start with 192.168.0.x to 192.168.x.x . So all the IP address start with 192.168.x.x with belong the same range 
-```
+Second part is called Subnet Mask (Set the IP Range) and it define that whatever IP address of devices start with 192.168.0.x it will belong to a LAN
+
+If I change the Subnet Mask value from 255.255.255.0 to 255.255.0.0 and this will define an IP Address Range start with 192.168.0.x to 192.168.x.x . So all the IP address start with 192.168.x.x with belong the same LAN
+
+`255.255.0.0` mean that 16 bits are fixed 
+
+`255.255.255.0` mean that 24 bits are fixed 
+
+#### CIDR Block 
+
+Subnet Mask dictates how many bits are fixed . Base this logic there is a short hand way of writing this called CIDR Block
+
+  - Written like this `192.168.0.0/16` or `192.168.0.0/24`
+
+#### Recap 
+
+<img width="600" alt="Screenshot 2025-04-11 at 13 53 09" src="https://github.com/user-attachments/assets/395097d7-0252-40df-b805-ec9e8fcebfb7" />
+
+We have a range of IP addresses that are available in a LAN . Every device in that local area network will get an IP Address from that range . 
+
+When We send a Request to an IP address within our LAN, the request will go to the Switch and it will forwarded to the device within a LAN 
+
+In the IP Address is external it will go to the internet through the Router . 
+
+That mean any device needs 3 pieces of data for communication : IP Address, Subnet, Gateway
+
+#### Network Address Translation (NAT)
+
+Internally in a LAN, we have an IP Address range that a network administrator of the company, or school, or in case of my own house, my Internet Provider chooses . And that each device will get a unique IP Address from that range . And suppose the device in our LAN is talking to a device in another LAN . How do we make sure not every network administrator selects the same range and the IP address in our LAN don't overlap or aren't the same as someone else's LAN ?
+
+They way it work is that the IP Addresses of devices that belong to a LAN are not visible to outside network or internet 
+
+So When I send a request to FB from my Laptop my Laptop IP Address from the LAN range does not arrive at FB Server instead it is replaced by the IP Address of the router, and this functionality of the router called a Network Address Translation or NAT . 
+
+  - Laptop send request - It go to a router -> Router will then request that on the devices behalf from internet and the response will then be sent back to the device
+
+**This is Important Concept and have 2 main Advantage**
+
+- Security and Protection of devices within LAN bcs my IP Address doesn't directly expose
+
+- Reuse IP address ranges multiple times without conflicting with each other
+
+- So 2 Company can have the same IP Address range within their own local area network . And they will not know about each other . So there will be no conflict . This is so efficent bcs there are a limited number of IP Addresses I get from IPV4 address range .
+
+ 
 
 
 

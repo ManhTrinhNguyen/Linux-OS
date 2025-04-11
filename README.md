@@ -532,10 +532,116 @@ So When I send a request to FB from my Laptop my Laptop IP Address from the LAN 
 
 - So 2 Company can have the same IP Address range within their own local area network . And they will not know about each other . So there will be no conflict . This is so efficent bcs there are a limited number of IP Addresses I get from IPV4 address range .
 
- 
+#### Firewall 
 
+What if outside device want to talk to my LAN directly ? Like I have a server that run my Applications, so I want to be able to accept requests from devices outside my LAN
 
+By default the server is not accessible from outside LAN bcs of Firewall 
 
+Firewall rule is a set of network that prevent unauthorized access from entering a private network 
+
+I can explicitly define what kind of communication I want to allow to my network using firewall rules . 
+
+**How does it work ?**
+
+I define which device on my network with specific IP Address should be accessible
+
+I can also define which other devices or what IP addresses specifically can access my server 
+
+Or I can allow any device on the internet to talk to my Server  
+1 more important thing I alway define in the Firewall rule is **PORT** . Which Ports are accessible on the Server or generally on the device that I want to allow to 
+
+#### PORT 
+
+Every device is a set of Ports
+
+Ports are like doors to the same building, I unlock some doors os the guests or requests can enter, and keep others locked . Or I can unlock them for only specific guests . 
+
+With Firewall configuration I can define which door or server I want to unlock and for which guests or for what Servers ? 
+
+Different Application and programs that run on the server will start or listen on different PORTS . Meaning I can access that Application on the device only on that specific port and 
+
+To keep this all standardized there are default or standard ports for many Applications  
+
+  - Most Web Applications start on Port 80 . So they accessible on this Port from a Browser when O request the Application .
+
+  - When I type facebook.com in the browser by default this rqeuest goes to a machine where FB is running on port 80 . So On those machines the firewall was configured to unlock the Port 80 to accept browser requests
+
+  - MySQL on port 3306
+
+  - PostgresQL on port 5432
+
+So for every application I need a Ports to communicate and port is unique on a device . I can't have 2 application listening on the same Port 
+
+#### Domain Name System (DNS)
+
+DNS is the thing that the whole networking relies on 
+
+Every computer on the network is uniquely identified by its IP Address and we saw that every device can talk to any other device using its IP Address . But when I visit FB Application I type in the IP Address in a browser or when I visit any other website I never just type an IP Address . Bcs facebook.com application runs on many computer which each have their  own IP Address. Every single Application that is running on a machine is accessible by an IP Address . **Why do we use names instead of IP address ?**
+
+Bcs human are better at remembering words and names instead of numbers . So to make using the web easier for humans the concepts of mapping the IP Addresses to names was introduced 
+
+Underthehood that name get translated into the actual IP Address where application is running which then my computer can send the request to . And the service that does this  translation is DNS 
+
+So using DNS we can give unique name to any IP Address .
+
+Consider there are so many websites and applications in the world and new ones being added daily and so many servers in this world connected to the internet . and so many servers in the world connected to internet . **How does DNS manage so many addresses and their names ?**
+
+  - DNS use simple policy of dividing all these name into different domains or groups .
+
+  - Domain name follow hierarchical structure
+
+  - Around 13 root domain accoss global with name from a to m . Under each root domain I have a hierarchy of what is called top level domains, or TLDs
+
+  - 6 original and most common top level domains :
+
+    - `.mil`: For military 
+   
+    - `.edu`: For education instituations 
+   
+    - `.com`: general purpose and businesses
+   
+    - `.org`: non profit organizations 
+   
+    - `.net`: networking technologies . Originally for networking technologies like internet service providers or any other infrastructure provider companies . But today is more general purpose and can be used by all type of bussinesses
+   
+    - `.gov`: For goverment
+   
+  - Apart from original Top Level domain there are geographical domains which were added later .
+
+    - `.at`: Austria
+   
+    - `.de`: Germany
+   
+    - `.us`: USA
+   
+    - `.fr`: France
+   
+    - This is used to also regulate domain names for companies that are register for each country : `www.bmw.de`, ....
+
+So when someone creates a website they can buy a domain name that belongs to one of these domains . And I may buy for a year if I don't need it anymroe someone else can buy the domain name later 
+
+**Who manages, sell, keep track these names ?**
+
+- This is regulated by a dedicated organization called the Internet Corporation for Assigned Names and Numbers (ICANN) which manage all these domain name spaces and it also authorized domain name register to whcih domain name may be registred and reassigned
+
+#### Subdomain 
+
+Every domain name relate to its root and one of its top level domains or geographic domain 
+
+Example I want to create my website `tim.com`
+
+  - First I select top level domain `.com` and create a domain for `tim`
+
+  - Let say I have 3 different applications which all belong to my company I can assign each one its own domain name using `subdomain` like : `shop.tim.com` or `education.tim.com` etc ...
+
+  - And many companies and many organiztions actually use this `subdomain` for different applications that all belong to that origanization . So each Application may run on its own dedicated server and each server that has its own IP Address will now have a full domain name
+
+#### How does DNS resolution work ?
+
+Every computer has a DNS client preinstalled 
+
+When I open a Browser and type facebook.com . My OS will make a DNS query asking DNS to resolve that facebook.com address or find a IP Address that map to facebook.com 
 
 
 
